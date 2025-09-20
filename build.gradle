@@ -1,0 +1,37 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+    id 'com.gradle.plugin-publish' version '1.2.1'
+}
+
+group = 'br.dev.rplus'
+version = '1.0.0'
+
+gradlePlugin {
+    website = 'https://github.com/rafandoo/versioning'
+    vcsUrl = 'https://github.com/rafandoo/versioning.git'
+
+    plugins {
+        versioning {
+            id = 'br.dev.rplus.versioning'
+            displayName = 'Versioning Plugin'
+            description = 'A Gradle plugin to manage project versioning.'
+            tags = ['versioning', 'semver', 'release']
+            implementationClass = 'br.dev.rplus.versioning.VersioningPlugin'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
