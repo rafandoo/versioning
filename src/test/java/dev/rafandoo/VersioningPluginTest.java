@@ -1,8 +1,8 @@
-package br.dev.rplus;
+package dev.rafandoo;
 
-import br.dev.rplus.versioning.Version;
-import br.dev.rplus.versioning.VersioningExtension;
-import br.dev.rplus.versioning.VersioningPlugin;
+import dev.rafandoo.versioning.Version;
+import dev.rafandoo.versioning.VersioningExtension;
+import dev.rafandoo.versioning.VersioningPlugin;
 import org.gradle.api.Project;
 import org.gradle.api.Task;
 import org.gradle.testfixtures.ProjectBuilder;

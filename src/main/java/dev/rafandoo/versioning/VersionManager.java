@@ -1,4 +1,4 @@
-package br.dev.rplus.versioning;
+package dev.rafandoo.versioning;
 
 import java.io.*;
 import java.util.Properties;

@@ -4,7 +4,7 @@ plugins {
     id 'com.gradle.plugin-publish' version '1.2.1'
 }
 
-group = 'br.dev.rplus'
+group = 'dev.rafandoo'
 version = '1.0.0'
 
 gradlePlugin {
@@ -13,11 +13,11 @@ gradlePlugin {
 
     plugins {
         versioning {
-            id = 'br.dev.rplus.versioning'
+            id = 'dev.rafandoo.versioning'
             displayName = 'Versioning Plugin'
             description = 'A Gradle plugin to manage project versioning.'
             tags = ['versioning', 'semver', 'release']
-            implementationClass = 'br.dev.rplus.versioning.VersioningPlugin'
+            implementationClass = 'dev.rafandoo.versioning.VersioningPlugin'
         }
     }
 }

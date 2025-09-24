@@ -1,4 +1,4 @@
-package br.dev.rplus.versioning;
+package dev.rafandoo.versioning;
 
 /**
  * Represents a semantic version with optional Release Candidate (RC) number.
