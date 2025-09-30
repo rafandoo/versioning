@@ -11,16 +11,6 @@ import org.gradle.api.Project;
  *     <li>Registers a {@link VersioningExtension} to expose the project's current version.</li>
  *     <li>Registers version increment tasks (major, minor, patch, RC, release).</li>
  * </ul>
- * <p>
- * Usage in build.gradle:
- * <pre>
- * plugins {
- *     id 'br.dev.rplus.versioning' version '1.0.0'
- * }
- *
- * // Access version
- * println "Current version: ${versioning.name}"
- * </pre>
  */
 public class VersioningPlugin implements Plugin<Project> {
 
